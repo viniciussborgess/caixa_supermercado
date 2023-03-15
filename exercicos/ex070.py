@@ -1,7 +1,7 @@
 from time import sleep
 totalPreco = barato = maisDe100 = 0
 print('-='* 20)
-print(f"{'SUPERMERCADO DO ZÉ':^40}")
+print(f"{'SUPERMERCADO DO ZÉ GOTA':^40}")
 print('-=' * 20)
 print("Informe suas compras!!!")
 while True:
@@ -13,7 +13,7 @@ while True:
     produtoBarato = ' '
     while continuar not in "SN":
         continuar = str(input("Você deseja continuar? [S/N] ")).strip().upper()[0]
-    if preco > 0:
+    if preco >= 0:
         totalPreco += preco
         barato = preco
         produtoBarato = produtos
@@ -31,5 +31,5 @@ print(f"Custaram mais de 100R$ {maisDe100} produtos.")
 sleep(0.5)
 print(f"O produto mais bararo foi {produtoBarato} que custou {barato}R$.")
 sleep(0.25)
-print("Obrigado pela preferencia.\nVolte sempre.")
+print("Obrigado pela preferencia.\nVolte sempre. Beijos.")
 
